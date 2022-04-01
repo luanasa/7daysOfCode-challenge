@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+
+
+nav{
+  width: 1440px;
+  height: 80px;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  background: #FFFFFF;
+}
+
+.logo {
+display: flex;
+}
+
+.logo img{
+ height: 54px;
+ width: 54px;
+ margin:auto;
+margin-left: 112px;
+
+}
+
+    .logo p{
+        width: 135px;
+        height: 10px;
+        left: 35px;
+        top: 1.5px;
+        margin-left: 8px;
+        color: #3A404E;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 50px;
+        text-align: center;
+        
+    }
+
+
+    .page-itens ul{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        align-items: center;
+
+         /* fonte */
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        
+    }
+
+    .page-itens ul li {
+        list-style: none;
+        margin: 0px 10px;
+    }
+
+    .page-itens a{
+        text-decoration: none;
+
+        font-family: Inter;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 24px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: #667085;
+    }
+
+   .page-itens a:hover {
+        background-color: #D3D3D3;
+    }
+
+
+.btn1{
+
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+
+        color: #667085;
+
+        position: static;
+        width: 112px;
+        height: 44px;
+        left: 18px;
+        top: 10px;
+
+        border-radius: 8px;
+        border: none;
+        background-color: white;
+        margin-right: 15px;
+
+    }
+    .btn1:hover {
+        box-shadow: inset 0 0 0 3px #8E2424;
+        cursor: pointer;
+        transition: all 0.4s ease;
+        color: white;
+        background: #8E2424;
+        border: none;
+      }
+
+.btn2 {
+
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+
+        width: 112px;
+        height: 44px;
+        background-color: #8E2424;
+        color: white;
+        border: 1px solid #8E2424;
+        border-radius: 8px;
+
+    }
+
+.btn2:hover {
+        cursor: pointer;
+        background: transparent;
+        transition: all 0.4s ease;
+        box-shadow: inset 0 0 0 3px #8E2424;
+        color: #101828;
+      }
