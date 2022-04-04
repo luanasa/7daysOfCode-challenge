@@ -3,7 +3,6 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Inter';
-    font-style: normal;
   }
 
   :root {
@@ -11,42 +10,26 @@
     --main-color: #215FD1;
   }
 
+body{
+    width: 100%;
+    height: 100vh;
+  }
+
 nav{
-  width: 1440px;
-  height: 80px;
-  margin-top: 20px;
+  width: 90rem;
+  height: 5rem;
+  margin-top: 1.25rem;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   background: #FFFFFF;
 }
 
-.logo {
-display: flex;
-}
-
 .logo img{
- height: 54px;
- width: 54px;
- margin:auto;
-margin-left: 112px;
-
+    margin-left: 110%;
+    max-width: 100%;
 }
-
-    .logo p{
-        width: 135px;
-        height: 10px;
-        left: 35px;
-        top: 1.5px;
-        margin-left: 8px;
-        color: #3A404E;
-        font-weight: 500;
-        font-size: 18px;
-        line-height: 50px;
-        text-align: center;
-        
-    }
 
 
     .page-itens ul{
@@ -56,23 +39,22 @@ margin-left: 112px;
         align-items: center;
 
          /* fonte */
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 24px;
+        font-size: 1rem;
+        line-height: 1.5rem;
         
     }
 
     .page-itens ul li {
         list-style: none;
-        margin: 0px 10px;
+        margin: 0rem 0.625rem;
     }
 
     .page-itens a{
         text-decoration: none;
 
-        font-size: 16px;
+        font-size: 1rem;
         font-weight: 500;
-        line-height: 24px;
+        line-height: 1.5rem;
         letter-spacing: 0em;
         text-align: left;
         color: var(--text-color);
@@ -86,20 +68,17 @@ margin-left: 112px;
 .btn1{
 
         font-weight: 500;
-        font-size: 16px;
-        line-height: 24px;
+        font-size: 1rem;
+        line-height: 1.5;
 
         color: var(--text-color);
 
-        width: 112px;
-        height: 44px;
-        left: 18px;
-        top: 10px;
+        width: 7rem;
+        height: 2.75rem;
 
         border-radius: 8px;
         border: none;
         background-color: white;
-        margin-right: 15px;
 
     }
     .btn1:hover {
@@ -113,14 +92,12 @@ margin-left: 112px;
 
 .btn2 {
 
-        font-family: 'Inter';
-        font-style: normal;
         font-weight: 500;
-        font-size: 16px;
-        line-height: 24px;
+        font-size: 1rem;
+        line-height: 1.5;
 
-        width: 112px;
-        height: 44px;
+        width: 7rem;
+        height: 2.75rem;
         background-color: #215FD1;
         color: white;
         border: 1px solid #215FD1;
@@ -138,16 +115,11 @@ margin-left: 112px;
 
 
 .sobre-nos {
+    padding: 7rem 0;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 96px 0px;
-
-    width: 1440px;
-    height: 407px;
-    left: calc(50% - 1440px/2);
-    top: 80px;
-    gap: 1rem; 
+    gap: 1rem;
 }
 
 .sobre-nos span{
@@ -156,60 +128,69 @@ margin-left: 112px;
 }
 
 .sobre-nos h1 {
-    font-size: 40px;
+    font-size: 2.5rem;
 }
 
 .sobre-nos p{
     color: var(--text-color);
-    width: 791px;
-    height: 60px;
-    left: 0px;
-    top: 12px;
+    max-width: 50%;
     text-align: center;
-    font-size: 19px;
+    line-height: 1.5rem;
 }
 
 .metricas-container{
     display: flex;
     flex-direction:row;
     align-items:center;
-    padding: 0px 0px 96px;
+    padding: 0rem 0rem 6rem;
 
-    width: 10px;
-    height: 40px;
-    left: 0px;
-    margin-left: 10%;
+    width: 0.625rem;
+    height: 2.5rem;
+    column-gap: 4.5rem;
+    margin-left: 13%;
 }
 
 .metricas-container h1{
-width: 280px;
-height: 72px;
-left: 0px;
-top: 0px;
+    font-size: 3rem;
+    line-height: 4.5rem;
+    letter-spacing: -0.02em;
 
-font-weight: 600;
-font-size: 40px;
-line-height: 72px;
-letter-spacing: -0.02em;
-
-color: var(--main-color);
-margin-right: 10%;
+    color: var(--main-color);
 }
 
 .metricas-container h4{
-width: 280px;
-height: 28px;
-left: 0px;
-top: 0px;
+width: 17.5rem;
+height: 1.75rem;
 
 font-weight: 500;
-line-height: 28px;
-margin: 5px 0px;
-margin-right: 10%;
+
 }
 
 .metricas-container p{
-    margin-right: 10%;
     color: var(--text-color);
-    font-size: 15px;
+    font-size:  0.900rem;
 }
+
+.talentos-container {
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 10rem 0;
+gap: 1rem;
+}
+
+.talentos-container span {
+    color: var(--main-color);
+    background: rgba(142, 36, 36, 0.05);
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+}
+
+.talentos-container p {
+    color: var(--text-color);
+}
+
+.talentos-container img {
+    margin-top: 2rem;
+    width: 80%;
+  }
