@@ -38,10 +38,10 @@ nav{
         flex-direction: row;
         align-items: center;
 
-         /* fonte */
         font-size: 1rem;
         line-height: 1.5rem;
-        
+        display: flex;
+        margin-right: 220px;
     }
 
     .page-itens ul li {
@@ -59,14 +59,6 @@ nav{
         text-align: left;
         color: var(--text-color);
     }
-
-   .page-itens a:hover {
-        background-color: #D3D3D3;
-    }
-
-.buttons{
-  /* TENTEI QUE DESISTI */
-}
 
 .btn1{
 
@@ -217,6 +209,14 @@ gap: 1rem;
     margin-bottom: 1rem;
 }
 
+.vaga:hover {
+  box-shadow: inset 0 0 0 3px #94b7f9;
+  cursor: pointer;
+  transition: all 0.4s ease;
+  color: black;
+  border: none;
+}
+
 .vaga span.titulo-vaga {
     font-weight: 500;
     margin-bottom: 1rem;
@@ -293,3 +293,77 @@ gap: 1rem;
       font-size: 12px;
       line-height: 20px;
   }
+
+.footer{
+  
+  background-color: #F9FAFB;
+  padding-top: 96px;
+  padding-bottom: 46px;
+  text-align: center;
+}
+
+.footer h3 {
+  text-align: center;
+  letter-spacing: -0.02em;
+
+  font-size: 30px;
+  line-height: 44px;
+  margin: 20px 0px;
+}
+
+.footer p {
+color: var(--text-color);
+text-align: center;
+font-size: 18px;
+line-height: 30px;
+margin: 20px 0px;
+}
+
+.footer input {
+  color: var(--text-color);
+  width: 320px;
+  height: 42px;
+  border-radius: 8px;
+  border: 2px solid #D0D5DD;
+
+
+
+  border: 1px solid #D0D5DD;
+  box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+  border-radius: 5px;
+  padding-left: 15px;
+  }
+
+  .footer input:focus {
+    border: 2px solid #215FD1;
+    outline: none;
+  }
+
+.footer button{
+  border-radius: 8px;
+  width: 100px;
+  height: 40px;
+  border: none;
+
+  color: white;
+  width: 250;
+  height: 2.75rem;
+
+  border-radius: 8px;
+  border: none;
+  background-color: #215FD1;
+
+}
+
+.footer button:hover {
+  box-shadow: inset 0 0 0 3px #94b7f9;
+  cursor: pointer;
+  transition: all 0.4s ease;
+  color: white;
+  background: #101828;
+  border: none;
+}
+
+.footer p:last-child {
+  font-size: 14px;
+}
